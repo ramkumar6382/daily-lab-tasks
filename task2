@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>task 2</title>
+</head>
+<body>
+  <h2> Data Types & Type Conversion</h2>
+  <script>
+   let number = 7;
+    let text = "tasks";
+ let isHappy = true;
+let nothing = null;
+    let notSet;
+    let person = { name: "leo" };
+    console.log(number);
+    console.log( text);
+    console.log(isHappy);
+    console.log( nothing);
+    console.log( notSet);
+    console.log( person);
+   let numToStr = String(number);
+    let strToNum = Number("123");
+    console.log( numToStr);
+    console.log( strToNum);
+   console.log("5" + 2);  
+    console.log("5" - 2);  
+    console.log(true + 1); 
+   console.log("Done!");
+  </script>
+</body>
+</html>
