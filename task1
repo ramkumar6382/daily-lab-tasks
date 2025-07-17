@@ -1,0 +1,17 @@
+//  var
+var name = "leo"
+console.log(name)
+
+name = "parthiban"
+console.log( name);
+
+// U  let
+let age = 25;
+console.log( age);
+
+age += 1; 
+console.log( age);
+
+// const
+const birthYear = 2000;
+console.log( birthYear);
