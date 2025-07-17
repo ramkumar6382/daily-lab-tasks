@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>task3</title>
+</head>
+<body>
+ <script>
+ let a = 30, b = 3;
+   console.log( a + b) ; console.log( a - b);console.log( a * b);console.log( a / b)      
+  // Assignment
+ let x = 5;x += 2; 
+console.log( x)   
+ x *= 3;
+ console.log( x)     
+// Relational
+ console.log( a > b) ;console.log( a < b) ;console.log( a == 10) 
+// Logical
+ var age = 20;
+var voterid = true
+if (age >= 18 && voterid) {
+  console.log("Allowed to vot.")
+} else {
+console.log("Not allowedto vote.")
+}
+ //Conditional
+var mark = 65;
+var message = (age >= 80) ? "you got seat in PSG :) " : "sorry you have got seat in KG:(";
+  console.log( message)
+// Bitwise
+    let p = 5; let q = 3;  
+console.log( p & q);console.log( p | q); console.log( p ^ q)
+
+  </script>
+</body>
+</html>
