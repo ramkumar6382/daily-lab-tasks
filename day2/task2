@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loop Control Practice</title>
+</head>
+<body>
+  <h2>Loop Practice - Open Console to View Output</h2>
+
+  <script>
+    console.log("----- WHILE LOOP -----");
+    // Print numbers from 5 to 15 using while loop
+    let i = 5;
+    while (i <= 15) {
+      console.log(i);
+      i++;
+    }
+
+    console.log("----- DO-WHILE LOOP -----");
+    let userInput;
+    let correctAnswer = "open";
+    let attempts = ["close", "wait", "open"];
+    let index = 0;
+
+    do {
+      userInput = attempts[index];
+      console.log("User input:", userInput);
+      index++;
+    } while (userInput !== correctAnswer && index < attempts.length);
+
+    if (userInput === correctAnswer) {
+      console.log("Correct input received!");
+    } else {
+      console.log("Input attempts exhausted");
+    }
+
+    console.log("----- FOR LOOP -----");
+    let N = 20;
+    let sum = 0;
+    for (let j = 1; j <= N; j++) {
+      sum += j;
+    }
+    console.log("Sum of first", N, "natural numbers is:", sum);
+
+    console.log("----- NESTED FOR LOOP (Multiplication Table) -----");
+    for (let a = 6; a <= 10; a++) {
+      let row = "";
+      for (let b = 1; b <= 10; b++) {
+        row += (a * b) + "\t";
+      }
+      console.log("Table for", a + ":", row);
+    }
+  </script>
+</body>
+</html>
