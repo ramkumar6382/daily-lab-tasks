@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conditional Statements Example - Updated Values</title>
+</head>
+<body>
+  <h2>Check Console for Outputs (Right-click > Inspect > Console)</h2>
+
+  <script>
+
+    console.log("----- Simple If Statement -----");
+    let age = 16;
+    if (age >= 18) {
+      console.log("You are eligible to vote.");
+    }
+
+    console.log("----- If-Else Block -----");
+    let temperature = 30;
+    if (temperature > 35) {
+      console.log("It's hot outside.");
+    } else {
+      console.log("The weather is moderate.");
+    }
+
+    console.log("----- Else-If Ladder -----");
+    let marks = 85;
+    if (marks >= 90) {
+      console.log("Grade: A");
+    } else if (marks >= 75) {
+      console.log("Grade: B");
+    } else if (marks >= 60) {
+      console.log("Grade: C");
+    } else {
+      console.log("Grade: Fail");
+    }
+
+    console.log("----- Switch Statement -----");
+    let day = 5;  
+    switch (day) {
+      case 1:
+        console.log("Monday");
+        break;
+      case 2:
+        console.log("Tuesday");
+        break;
+      case 3:
+        console.log("Wednesday");
+        break;
+      case 4:
+        console.log("Thursday");
+        break;
+      case 5:
+        console.log("Friday");
+        break;
+      case 6:
+        console.log("Saturday");
+        break;
+      case 7:
+        console.log("Sunday");
+        break;
+      default:
+        console.log("Invalid day. Please enter between 1 and 7.!");
+    }
+
+    console.log("----- Edge Case Tests -----");
+
+    let testAge = 19;
+    if (testAge >= 19) {
+      console.log("Test Age 19: Can vote");
+    } else {
+      console.log("Test Age 19: Cannot vote");
+    }
+
+    let testMarks = 45;
+    if (testMarks >= 90) {
+      console.log("Test Marks 45: Grade A");
+    } else if (testMarks >= 75) {
+      console.log("Test Marks 45: Grade B");
+    } else if (testMarks >= 60) {
+      console.log("Test Marks 45: Grade C");
+    } else {
+      console.log("Test Marks 45: Fail");
+    }
+
+    let testDay = 7;
+    switch (testDay) {
+      case 1:
+        console.log("Test Day 7: Monday");
+        break;
+      case 7:
+        console.log("Test Day 7: Sunday");
+        break;
+      default:
+        console.log("Test Day 7: Invalid Day");
+    }
+
+  </script>
+</body>
+</html>
